@@ -1,0 +1,36 @@
+{
+  "name": "manyou/promise-http-client",
+  "description": "Make a Symfony HttpClient to return Guzzle promises",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brent, Bohan Yang",
+      "email": "brent@manyou.io"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "symfony/http-client-contracts": "^3.0",
+    "symfony/http-client-implementation": "^3.0",
+    "guzzlehttp/promises": "^1.4",
+    "psr/log": "^2.0 || ^3.0"
+  },
+  "require-dev": {
+    "symfony/http-client": "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Manyou\\PromiseHttpClient\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "extra": {
+      "branch-alias": {
+          "dev-main": "0.1-dev"
+      }
+  }
+}
